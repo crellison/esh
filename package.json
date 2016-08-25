@@ -1,5 +1,5 @@
 {
-  "name": "express-errors",
+  "name": "express-status-helper",
   "version": "1.0.0",
   "description": "Easy error handling for Express Apps",
   "main": "errors.js",
@@ -9,6 +9,7 @@
   "keywords": [
     "express",
     "error",
+    "status"
     "handling",
     "status",
     "send"
