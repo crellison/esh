@@ -1,0 +1,18 @@
+{
+  "name": "express-errors",
+  "version": "1.0.0",
+  "description": "Easy error handling for Express Apps",
+  "main": "errors.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "error",
+    "handling",
+    "status",
+    "send"
+  ],
+  "author": "Cole Ellison",
+  "license": "MIT"
+}
