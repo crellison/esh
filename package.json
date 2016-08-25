@@ -1,10 +1,14 @@
 {
   "name": "express-status-helper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Easy error handling for Express Apps",
   "main": "errors.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/crellison/express-status-helper"
   },
   "keywords": [
     "express",
