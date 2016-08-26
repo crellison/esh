@@ -32,6 +32,6 @@ router.post("/", function(req,res,next) {
 ```
 
 ## TODO
--[] option to add data upon success responses
--[] required header parameters for failure codes (esp. 401, 407, etc.)
--[] additional markdown doc with documentation for each status code
+- [ ] option to add data upon success responses
+- [ ] required header parameters for failure codes (esp. 401, 407, etc.)
+- [ ] additional markdown doc with documentation for each status code
