@@ -9,21 +9,24 @@ Inside the routes file that needs to send errors and statuses (likely all of the
 
 ## Usage
 
-`esh` takes two mandatory arguments and one optional argument. You must pass in the response object from express and a staus code. Optionally, you may also include a custom message to be used instead of the preloaded messages.
+`esh` takes two mandatory arguments and two optional arguments. You must pass in the response object from express and a staus code. Optionally, you may also include a custom message to be used instead of the preloaded messages. You can also include a data argument to send back in the json object.
 
 ### Example Use
 ```javascript
 var esh = require("express-status-helper");
 
 router.post("/", function(req,res,next) {
+	var toReturn = {
+		theCake: "a lie",
+		allYourBase: "belong to us"
+	};
   // example request requires "email" key in body
   if (!req.body.email) return esh(res, 400); 
-  
-  ...
+  else return esh(res, 200, "Hooray! It worked!", toReturn)
 })
 ```
 
-### Example Response (for the above example)
+### Example Responses (for the above example)
 ```json
 {
   "success": false,
@@ -31,6 +34,16 @@ router.post("/", function(req,res,next) {
 }
 ```
 
+```json
+{
+  "success": true,
+  "message": "Hooray! It worked!",
+  "data": {
+		"theCake": "a lie",
+		"allYourBase": "belong to us"
+	}
+}
+```
 ## TODO
 - [ ] option to add data upon success responses
 - [ ] required header parameters for failure codes (esp. 401, 407, etc.)
