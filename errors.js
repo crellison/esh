@@ -4,14 +4,14 @@
 var codes = require('./errors.json');
 
 // error handler message, sends error messages in json
-module.exports = function(res,err,message,data) {
+module.exports = function(res,err,obj) {
 		err = parseInt(err);
 		if (isNaN(err) || codes[err] === undefined) 
 			throw Error("Don't go breaking the error handler");
-		message = message || codes[err];
+		message = obj.message || codes[err];
 		return res.status(err).json({
 			success: (err < 400 ? true : false),
 			message: message,
-			data: data
+			data: obj.data || undefined
 		});
 	}
