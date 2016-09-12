@@ -1,6 +1,8 @@
 # Express Errors
 Simple HTTP staus handling for Express Apps
 
+Use [HTTP Status Codes](https://httpstatuses.com/) for reference on proper status usage
+
 ## Installing
 
 In command line: `npm install --save express-status-helper` 
@@ -13,6 +15,7 @@ Wherever you use it: `var esh = require("express-status-helper");`
 
 ### Example Use
 ```javascript
+var router = express.Router();
 var esh = require("express-status-helper");
 
 router.post("/", function(req,res,next) {
