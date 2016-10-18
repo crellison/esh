@@ -5,6 +5,7 @@ var codes = require('./errors.json');
 
 // error handler message, sends error messages in json
 module.exports = function(res,err,obj) {
+		obj = obj || {};
 		err = parseInt(err);
 		if (isNaN(err) || codes[err] === undefined) 
 			throw Error("Don't go breaking the error handler");
