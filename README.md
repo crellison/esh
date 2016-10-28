@@ -1,4 +1,4 @@
-# Express Errors
+# Express Status Helper
 Simple HTTP staus handling for Express Apps
 
 Use [HTTP Status Codes](https://httpstatuses.com/) for reference on proper status usage
