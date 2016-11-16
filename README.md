@@ -1,7 +1,7 @@
 # Express Status Helper
 Simple HTTP staus handling for Express Apps
 
-[![npm version](https://badge.fury.io/js/express-status-helper.svg)](https://badge.fury.io/js/express-status-helper)
+[![npm version](https://badge.fury.io/js/express-status-helper.svg)](https://badge.fury.io/js/express-status-helper) [![dependencies](https://david-dm.org/crellison/express-status-helper.svg)](https://david-dm.org/crellison/express-status-helper.svg)
 
 Use [HTTP Status Codes](https://httpstatuses.com/) for reference on proper status usage
 
